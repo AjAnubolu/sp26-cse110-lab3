@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meeting minutes for the Pomodoro Timer project team" />
+    <meta name="author" content="Ajay Anubolu" />
+    <title>Pomodoro Timer - Meeting Minutes</title>
+    <link rel="icon" href="https://fav.farm/%E2%8F%B1" />
+  </head>
+  <body>
+    <header>
+      <h1>Pomodoro Timer - First Brainstorm</h1>
+      <h2>Brainstorming Session</h2>
+      <h3>April 10, 2026</h3>
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new">New Business</a></li>
+          <li><a href="#diagrams">Diagrams</a></li>
+          <li><a href="#misc">Misc</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#feedback">Feedback Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <p>The following team members were <strong>present</strong> at the meeting:</p>
+        <ol>
+          <li>Ajay Anubolu (Team Lead)</li>
+          <li>Jane Smith (Designer)</li>
+          <li>Bob Johnson (Developer)</li>
+          <li>Alice Williams (Developer)</li>
+          <li>Carlos Garcia (QA)</li>
+        </ol>
+        <p><b>Absent:</b> <i>David Lee</i> (excused)</p>
+      </section>
+
+      <hr />
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review project requirements</li>
+          <li>Discuss timer functionality and <em>user experience</em></li>
+          <li>Assign initial tasks</li>
+          <li>Set deadlines for first sprint</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <ul>
+          <li>Team name selection &mdash; still need a final vote</li>
+          <li>GitHub repository setup: <a href="https://github.com">repo link pending</a></li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="new">
+        <h2>New Business</h2>
+        <ul>
+          <li>
+            <strong>Timer Core Features:</strong>
+            <ul>
+              <li>25-minute work sessions</li>
+              <li>5-minute short breaks</li>
+              <li>15-minute long breaks after 4 sessions</li>
+            </ul>
+          </li>
+          <li>
+            <strong>UI Requirements:</strong>
+            <ul>
+              <li>Clean, minimal interface</li>
+              <li>Visual progress indicator</li>
+              <li>Sound notification when timer ends</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Tech Stack Decision:</strong>
+            <br />
+            The team agreed to use <b>vanilla HTML, CSS, and JavaScript</b> to keep things simple.
+          </li>
+        </ul>
+        <details>
+          <summary>View proposed timeline</summary>
+          <p>
+            <b>Week 1:</b> Wireframes and design<br />
+            <b>Week 2:</b> Core timer logic<br />
+            <b>Week 3:</b> UI implementation<br />
+            <b>Week 4:</b> Testing and polish
+          </p>
+        </details>
+      </section>
+
+      <hr />
+
+      <section id="diagrams">
+        <h2>Diagrams</h2>
+        <p>Below is the <em>whiteboard diagram</em> from our brainstorming session:</p>
+        <img
+          src="images/whiteboard-diagram.png"
+          alt="Whiteboard diagram showing the Pomodoro Timer application architecture with components for Timer, Settings, and Notifications"
+          width="500"
+        />
+      </section>
+
+      <hr />
+
+      <section id="misc">
+        <h2>Miscellaneous Comments</h2>
+        <div>
+          <p>
+            <span>Jane</span> suggested we look at existing Pomodoro apps for inspiration.
+            She specifically mentioned <i>Forest</i> and <i>Focus Keeper</i>.
+          </p>
+          <p>
+            Carlos raised a concern about <strong>accessibility</strong> &mdash; we need to ensure
+            the timer works well with screen readers.
+          </p>
+          <p>
+            Next meeting is scheduled for <b>April 17, 2026</b> at 3:00 PM.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="media">
+        <h2>Meeting Recordings</h2>
+        <h3>Audio Recording</h3>
+        <audio controls>
+          <source src="media/meeting-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Recording</h3>
+        <video controls width="400">
+          <source src="media/meeting-video.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <hr />
+
+      <section id="feedback">
+        <h2>Meeting Feedback Form</h2>
+        <form>
+          <fieldset>
+            <legend>Your Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
+            <br /><br />
+            <label for="meeting-date">Meeting Date:</label>
+            <input type="date" id="meeting-date" name="meeting-date" />
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Meeting Rating</legend>
+            <p>How productive was this meeting?</p>
+            <input type="radio" id="very-productive" name="productivity" value="very" />
+            <label for="very-productive">Very productive</label><br />
+            <input type="radio" id="somewhat-productive" name="productivity" value="somewhat" />
+            <label for="somewhat-productive">Somewhat productive</label><br />
+            <input type="radio" id="not-productive" name="productivity" value="not" />
+            <label for="not-productive">Not productive</label>
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Topics Covered</legend>
+            <input type="checkbox" id="topic-design" name="topics" value="design" />
+            <label for="topic-design">Design</label><br />
+            <input type="checkbox" id="topic-dev" name="topics" value="development" />
+            <label for="topic-dev">Development</label><br />
+            <input type="checkbox" id="topic-testing" name="topics" value="testing" />
+            <label for="topic-testing">Testing</label><br />
+            <input type="checkbox" id="topic-planning" name="topics" value="planning" />
+            <label for="topic-planning">Planning</label>
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Additional Feedback</legend>
+            <label for="comments">Comments:</label><br />
+            <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Share your thoughts on the meeting..."></textarea>
+            <br /><br />
+            <label for="facilitator">Who should facilitate next meeting?</label><br />
+            <input list="team-members" id="facilitator" name="facilitator" />
+            <datalist id="team-members">
+              <option value="Ajay Anubolu"></option>
+              <option value="Jane Smith"></option>
+              <option value="Bob Johnson"></option>
+              <option value="Alice Williams"></option>
+              <option value="Carlos Garcia"></option>
+              <option value="David Lee"></option>
+            </datalist>
+            <br /><br />
+            <label for="follow-up">Preferred follow-up method:</label>
+            <select id="follow-up" name="follow-up">
+              <option value="email">Email</option>
+              <option value="slack">Slack</option>
+              <option value="meeting">Another Meeting</option>
+            </select>
+          </fieldset>
+
+          <br />
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2026 Pomodoro Timer Team. Meeting minutes recorded by Ajay Anubolu.</p>
+    </footer>
+  </body>
+</html>
