@@ -85,3 +85,54 @@ footer p {
   text-align: center;
   color: var(--muted-color);
 }
+
+/* ======================================
+   Box Model: margins, padding, borders
+   Units: rem, em, %, px, pt, in
+   ====================================== */
+
+/* Auto margin - centers content. Uses max-width (absolute unit px).
+   Padding uses shorthand. */
+main {
+  max-width: 900px;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Header with longhand margin and shorthand padding. Border shorthand. */
+header {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  padding: 1.5rem;
+  border: 2pt solid var(--border-color);
+  border-radius: 8px;
+}
+
+/* Section uses shorthand margin, longhand padding, longhand border */
+section {
+  margin: 1.5em 0;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 1px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 1rem 0;
+}
