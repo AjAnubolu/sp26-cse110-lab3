@@ -1,0 +1,48 @@
+/* ======================================
+   CSS Variables and Color Setup
+   ====================================== */
+
+:root {
+  --primary-color: #e74c3c;
+  --secondary-color: rgb(52, 152, 219);
+  --accent-color: hsl(145, 63%, 49%);
+  --text-color: #2c3e50;
+  --bg-color: #fdfdfd;
+  --muted-color: rgba(44, 62, 80, 0.6);
+  --border-color: hsla(210, 16%, 82%, 1);
+}
+
+/* Universal selector - reset defaults */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /* CSS variable with fallback */
+  background: var(--bg-secondary, #fdfdfd);
+}
+
+/* Element selector - demonstrating color formats */
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  color: rgb(52, 152, 219);
+}
+
+h3 {
+  color: hsl(145, 63%, 40%);
+}
+
+/* color-mix demonstration */
+a {
+  color: color-mix(in srgb, var(--secondary-color) 70%, black);
+}
+
+/* Named color */
+mark {
+  background: orange;
+}
