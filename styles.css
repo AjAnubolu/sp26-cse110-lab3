@@ -177,3 +177,123 @@ hr {
   background-color: #eef6fb;
   border-radius: 4px;
 }
+
+/* ======================================
+   Positioning
+   ====================================== */
+
+/* Sticky header stays at top when scrolling */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg-color);
+}
+
+/* Relative positioning demo on the footer */
+footer {
+  position: relative;
+}
+
+/* ======================================
+   Pseudo-classes & interactions
+   ====================================== */
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:active {
+  color: hsl(0, 70%, 40%);
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.nav-list li:hover {
+  background-color: var(--accent-color);
+}
+
+/* ======================================
+   Selectors: ID, attribute, combinators, combined, :has(), nested
+   ====================================== */
+
+/* ID selector */
+#feedback {
+  background-color: #fafcff;
+}
+
+/* Attribute selector */
+input[type="text"] {
+  padding: 0.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 250px;
+}
+
+/* Selector list - multiple elements with same rule */
+input[type="date"], textarea, select {
+  padding: 0.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* Descendant combinator - matches any fieldset inside a form */
+form fieldset {
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+/* Child combinator - direct children only */
+form > button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* General sibling combinator - any h2 ~ p after it */
+h2 ~ p {
+  margin-top: 0.5rem;
+}
+
+/* Adjacent sibling combinator - only the immediate p after h3 */
+h3 + p {
+  margin-top: 0.25rem;
+}
+
+/* Combining two selectors - element.class */
+ol.attendee-grid {
+  list-style-type: decimal;
+}
+
+/* :has() selector - sections that contain an img get a special bg */
+section:has(img) {
+  background-color: #fffdf5;
+}
+
+/* Nested selectors */
+details {
+  padding: 0.5rem;
+
+  & summary {
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
