@@ -136,3 +136,44 @@ hr {
   border-top: 1px solid var(--border-color);
   margin: 1rem 0;
 }
+
+/* ======================================
+   Flexbox - nav list
+   ====================================== */
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: #f6f8fa;
+}
+
+/* ======================================
+   Grid - attendee list
+   ====================================== */
+
+.attendee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.attendee-grid li {
+  padding: 0.5rem;
+  background-color: #eef6fb;
+  border-radius: 4px;
+}
